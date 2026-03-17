@@ -300,12 +300,12 @@ function renderQuestion() {
     document.getElementById("quiz").replaceChildren(header, question, buttons);
 }
 
-function dist(data1, data2) {
+function distSquared(data1, data2) {
     let n = 0;
     for (const [i, x] of data1.entries()) {
         n += (x-data2[i]) ** 2;
     }
-    return Math.sqrt(n);
+    return n;
 }
 
 function renderEnd() {
@@ -339,7 +339,7 @@ function renderEnd() {
     let bestName;
     let bestDist;
     for (const {name, data: data2} of archetypes) {
-        const d = dist(data, data2);
+        const d = distSquared(data, data2);
         if (bestDist === undefined || d < bestDist) {
             bestName = name;
             bestDist = d;
