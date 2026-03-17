@@ -41,7 +41,7 @@ const questions = [
         text: `You are the <span class="coven">Witch</span>. What do you do on Night 1?`,
         answers: [
             {text: `<span class="kw">Control</span> a <span class="town">Town</span> member`, effect: {unconventional: -5, bold: -2}},
-            {text: `<span class="kw">Control</span> the <span class="coven">Town Traitor</span>`, effect: {hunt: +5, confplaying: +5}},
+            {text: `<span class="kw">Control</span> the <span class="kw">Town Traitor</span>`, effect: {hunt: +5, confplaying: +5}},
             {text: "Stay home", effect: {unconventional: +10}},
             {text: `Stay home and claim (or let another <span class="coven">Coven</span> member claim) to have been <span class="kw">Control</span>led`, effect: {confplaying: +5, active: +5}},
         ],
@@ -66,7 +66,7 @@ const questions = [
         ],
     },
     {
-        text: `You are a member of the <span class="coven">Coven</span>. It is Night 2, and your <span class="coven">Coven Leader</span> died yesterday. Your <span class="coven">Town Traitor</span>
+        text: `You are a member of the <span class="coven">Coven</span>. It is Night 2, and your <span class="coven">Coven Leader</span> died yesterday. Your <span class="kw">Town Traitor</span>
                is an unremarkable <span class="coven">Lookout</span>. Is it time to aim for hunt, or is winning by majority still viable?`,
         answers: [
             {text: "Go majority", effect: {hunt: -10, active: +2}},
@@ -74,7 +74,7 @@ const questions = [
         ],
     },
     {
-        text: `You are a member of the <span class="coven">Coven</span>, and you accidentally find yourself 1f1 with your <span class="coven">Town Traitor</span> on Day 2. How do you play it?`,
+        text: `You are a member of the <span class="coven">Coven</span>, and you accidentally find yourself 1f1 with your <span class="kw">Town Traitor</span> on Day 2. How do you play it?`,
         answers: [
             {text: "Defend poorly to try and be hanged over them", effect: {unconventional: -5, hunt: +5, active: -5}},
             {text: "Push them as hard as you can", effect: {unconventional: +10, hunt: -5, bold: +10, active: +5}},
@@ -99,7 +99,7 @@ const questions = [
         ],
     },
     {
-        text: `You are a weak <span class="coven">Town Traitor</span>, such as a <span class="coven">Coroner</span> or <span class="coven">Bodyguard</span>. How do you play it?`,
+        text: `You are a weak <span class="kw">Town Traitor</span>, such as a <span class="coven">Coroner</span> or <span class="coven">Bodyguard</span>. How do you play it?`,
         answers: [
             {text: "Claim your real role", effect: {unconventional: -10, fakeclaiming: -10, confplaying: +5, hunt: +10, active: -5}},
             {text: "Claim another alignment so a teammate can take the slot", effect: {fakeclaiming: +5, hunt: -10}},
@@ -213,7 +213,7 @@ const questions = [
         ],
     },
     {
-        text: `When claiming <span class="town">Town Investigative</span> as the <span class="coven">Town Traitor</span>, do you always give true information?`,
+        text: `When claiming <span class="town">Town Investigative</span> as the <span class="kw">Town Traitor</span>, do you always give true information?`,
         answers: [
             {text: "Yes", effect: {active: -3, bold: -2, confplaying: +10, hunt: +10}},
             {text: "Not always", effect: {active: +1}},
@@ -234,7 +234,7 @@ const questions = [
         answers: [
             {text: "Yes, from Night 1", effect: {hunt: -20, bold: +10, active: +10, unconventional: +5, confplaying: -10, fakeclaiming: +5}},
             {text: "Yes, later in the game if majority is very viable", effect: {hunt: -5, active: +5}},
-            {text: `No, outing the <span class="coven">Town Traitor</span> role isn't worth it`, effect: {hunt: +5}},
+            {text: `No, outing the <span class="kw">Town Traitor</span> role isn't worth it`, effect: {hunt: +5}},
         ],
     },
     {
