@@ -30,7 +30,7 @@ const archetypes = [
 
 const questions = [
     {
-        text: `You are a <span class="coven">Town Traitor Deputy</span>. On Day 2, a <span class="town">Sheriff</span> claim finds your teammate, the <span class="coven">Hex Master</span>,
+        text: `You are a <span class="kw">Town Traitor</span> <span class="coven">Deputy</span>. On Day 2, a <span class="town">Sheriff</span> claim finds your teammate, the <span class="coven">Hex Master</span>,
                <span class="kw">Sus</span>. Do you shoot your teammate?`,
         answers: [
             {text: "Yes", effect: {hunt: +10, confplaying: +10, bold: +5, active: +2}},
@@ -107,7 +107,7 @@ const questions = [
         ],
     },
     {
-        text: `You are a <span class="coven">Town Traitor Veteran</span>. How do you play it?`,
+        text: `You are a <span class="kw">Town Traitor</span> <span class="coven">Veteran</span>. How do you play it?`,
         answers: [
             {text: `Claim <span class="town">Veteran</span>`, effect: {fakeclaiming: -10, confplaying: +5, hunt: +10, active: -5}},
             {text: `Call for TPLO and <span class="kw">Alert</span>`, effect: {confplaying: -4, hunt: -20, active: +5}},
@@ -115,7 +115,7 @@ const questions = [
         ],
     },
     {
-        text: `You are a <span class="coven">Town Traitor Vigilante</span>. It's Night 3, and 2 of your teammates are dead. You, the <span class="coven">Hex Master</span>, and the
+        text: `You are a <span class="kw">Town Traitor</span> <span class="coven">Vigilante</span>. It's Night 3, and 2 of your teammates are dead. You, the <span class="coven">Hex Master</span>, and the
         <span class="coven">Ritualist</span> remain. None of you are outed yet, but 7 <span class="town">Town</span> members remain and only 1 of them is
         <span class="kw">Hex</span>ed. The <span class="town">Marshal</span> is dead, and you've yet to kill anyone. What do you do?`,
         answers: [
@@ -179,7 +179,7 @@ const questions = [
         ],
     },
     {
-        text: `You are a <span class="coven">Town Traitor Cleric</span> and your team is in a bad way. By Night 3, it's clear you will have to go through hunt. Your teammate suggests you could
+        text: `You are a <span class="kw">Town Traitor</span> <span class="coven">Cleric</span> and your team is in a bad way. By Night 3, it's clear you will have to go through hunt. Your teammate suggests you could
                help confirm yourself by saving someone from an attack. They believe it's a good idea, but they're not you. Do you agree?`,
         answers: [
             {text: "Yes, go for the confirmation play", effect: {confplaying: +10}},
@@ -187,7 +187,7 @@ const questions = [
         ],
     },
     {
-        text: `Would you bus your teammate on Day 2 as <span class="coven">Town Traitor Town Investigative</span> (or as another alignment, by faking <span class="town">Town Investigative</span>)?`,
+        text: `Would you bus your teammate on Day 2 as <span class="kw">Town Traitor</span> <span class="coven">Town Investigative</span> (or as another alignment, by faking <span class="town">Town Investigative</span>)?`,
         answers: [
             {text: "Yes, I will look good in hunt", effect: {unconventional: +3, confplaying: +10, hunt: +10}},
             {text: "Yes, but only if majority is viable after", effect: {unconventional: +5, confplaying: +10}},
@@ -221,7 +221,7 @@ const questions = [
         ],
     },
     {
-        text: `You are a <span class="coven">Town Traitor Amnesiac</span>, and you have a <span class="coven">Conjurer</span> on your team. Do you tell the <span class="kw">Necronomicon</span> holder
+        text: `You are a <span class="kw">Town Traitor</span> <span class="coven">Amnesiac</span>, and you have a <span class="coven">Conjurer</span> on your team. Do you tell the <span class="kw">Necronomicon</span> holder
                not to attack?`,
         answers: [
             {text: `Yes, try to nuke a <span class="town">Town Power</span>`, effect: {hunt: -5, bold: +5, active: +10, unconventional: +2}},
@@ -229,7 +229,7 @@ const questions = [
         ],
     },
     {
-        text: `As a <span class="coven">Town Traitor Socialite</span>, do you ever <span class="kw">Guest List</span> the <span class="kw">Necronomicon</span> holder and help them bypass
+        text: `As a <span class="kw">Town Traitor</span> <span class="coven">Socialite</span>, do you ever <span class="kw">Guest List</span> the <span class="kw">Necronomicon</span> holder and help them bypass
                <span class="town">Town Protective</span>s?`,
         answers: [
             {text: "Yes, from Night 1", effect: {hunt: -20, bold: +10, active: +10, unconventional: +5, confplaying: -10, fakeclaiming: +5}},
@@ -238,7 +238,7 @@ const questions = [
         ],
     },
     {
-        text: `You are a <span class="coven">Town Traitor Tavern Keeper</span>. Are you more liable to try to appear <span class="town">Town</span> with your <span class="kw">Roleblock</span>s
+        text: `You are a <span class="kw">Town Traitor</span> <span class="coven">Tavern Keeper</span>. Are you more liable to try to appear <span class="town">Town</span> with your <span class="kw">Roleblock</span>s
                or to play like a <span class="coven">Poisoner</span>?`,
         answers: [
             {text: `<span class="kw">Roleblock</span> the players you would if you were <span class="town">Town</span>, including your teammates`, effect: {hunt: +10, confplaying: +10, active: +3}},
